@@ -6,4 +6,16 @@
   .font-inter{
     font-family:  "Inter", sans-serif;
   }
+  .bg-parple{
+    background-color: #1A0B2E;
+  }
+  .linear-grd-1{
+    background-color: #9100f8;
+  }
+  .linear-grd-2{
+    background-color: #fb09b4;
+  }
+  .linear-grd-3{
+    background-color: #f7e93f;
+  }
 }

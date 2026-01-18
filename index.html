@@ -17,7 +17,45 @@
       <!-- Tailwind Config -->
  <link rel="stylesheet" href="tailwindcss.init.css">
 </head>
-<body>
-  
+<body class="font-inter">
+  <!-- nav bar -->
+  <nav class="bg-parple">
+    <!-- menu container -->
+     <div class="
+     w-[95%] 
+     max-w-[1200px] 
+     mx-auto 
+     flex justify-between items-center 
+     p-7 
+     text-white
+     ">
+        <!-- brand logo -->
+        <h1 class="
+        text-4xl font-extrabold 
+        ">Tech <span class="inline-block bg-gradient-to-b from-[#9100f8] via-[#fb09b4] to-[#f7e93f] 
+        bg-clip-text text-transparent
+        ">Wave</span></h1>
+        
+        <!-- burger icon -->
+         <div>
+          <img src="assets/hamburger-menu.png" class="md:hidden" alt="">
+         </div>
+        <!-- menu -->
+          <ul class="hidden md:flex mx-auto gap-8">
+            <li><a href="demo.html">About</a></li>
+            <li><a href="demo.html">Episodes</a></li>
+            <li><a href="demo.html">Host</a></li>
+          </ul>
+
+          <!-- subscribe button -->
+          <button
+          class="hidden md:inline-block font-semibold bg-gradient-to-bl hover:scale-110 transition-all duration-600 ease-in-out from-[#9100f8] via-[#fb09b4] to-[#f7e93f] py-3 px-4 rounded-4xl"
+          >subscribe 
+            <span class="material-symbols-outlined leading-none align-middle">
+    arrow_forward
+    </span>
+          </button>
+            </div>
+  </nav>
 </body>
 </html>
