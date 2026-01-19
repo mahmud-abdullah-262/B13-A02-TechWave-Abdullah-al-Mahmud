@@ -17,7 +17,7 @@
       <!-- Tailwind Config -->
  <link rel="stylesheet" href="tailwindcss.init.css">
 </head>
-<body class="font-inter">
+<body class="font-inter text-white">
   <!-- nav bar -->
   <nav class="bg-parple">
     <!-- menu container -->
@@ -57,5 +57,41 @@
           </button>
             </div>
   </nav>
+
+  <header>
+    <!-- banner section -->
+
+    <div class="
+    bg-[url(assets/hero-bg.png)] bg-[center_30%] bg-contain bg-no-repeat bg-[#1A0B2E]
+    text-center 
+    flex flex-col justify-center items-center 
+    p-6  md:p-20">
+      <!-- banner icon -->
+            <div class="
+            bg-[url(assets/hero-circle.png)] bg-center bg-contain bg-no-repeat
+            w-[50%] p-[15%] md:p-10 md:w-[350px] md:h-[350px] flex justify-center items-center 
+            object-center object-contain
+             mt-10 md:mt-6">
+              <img class="object-center object-cover" src="assets/microphone.png" alt="">
+            </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-10">TeckWave</h1>
+      <p class="text-base mt-2">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+      <!-- button div -->
+       <div class="flex gap-3 mt-6">
+        <button class="bg-gradient-to-bl hover:scale-105 transition-all duration-600 ease-in-out from-[#9100f8] via-[#fb09b4] to-[#f7e93f] py-2 px-4 rounded-4xl flex items-center gap-2 text-[14px] md:text-base font-semibold">
+        <i class="fa-brands fa-spotify"></i>
+        Listen on Spotify
+      </button>
+      <button class="text-[#00FF88] py-2 px-4 rounded-4xl flex items-center gap-2 text-sm md:text-base font-semibold border-2 hover:scale-105 transition-all duration-600 ease-in-out">
+        <span class="material-symbols-outlined leading-0">
+mail
+</span>
+        Subscribe
+      </button>
+       </div>
+      
+    </div>
+  </header>
 </body>
 </html>
