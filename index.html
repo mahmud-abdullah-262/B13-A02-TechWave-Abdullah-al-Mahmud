@@ -13,6 +13,8 @@
 
   <!-- tailwind css -->
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      
        
       <!-- Tailwind Config -->
  <link rel="stylesheet" href="tailwindcss.init.css">
@@ -41,14 +43,32 @@
          </div>
         <!-- menu -->
           <ul class="hidden md:flex mx-auto gap-8">
-            <li><a href="demo.html">About</a></li>
-            <li><a href="demo.html">Episodes</a></li>
-            <li><a href="demo.html">Host</a></li>
+            <li><a class="
+              border-b border-transparent
+              hover:border-white hover:text-lg 
+              transition-all
+               duration-500
+               pb-1.5
+               " href="demo.html">About</a></li>
+            <li><a class="
+               border-b border-transparent
+              hover:border-white hover:text-lg 
+              transition-all
+               duration-500
+               pb-1.5
+              " href="demo.html">Episodes</a></li>
+            <li><a class="
+               border-b border-transparent
+              hover:border-white hover:text-lg 
+              transition-all
+               duration-500
+               pb-1.5
+              " href="demo.html">Host</a></li>
           </ul>
 
           <!-- subscribe button -->
           <button
-          class="hidden md:inline-block font-semibold bg-gradient-to-bl hover:scale-110 transition-all duration-600 ease-in-out from-[#9100f8] via-[#fb09b4] to-[#f7e93f] py-3 px-4 rounded-4xl"
+          class="hidden md:inline-block font-semibold bg-gradient-to-bl hover:scale-110 transition-all duration-400 ease-in-out from-[#9100f8] via-[#fb09b4] to-[#f7e93f] py-3 px-4 rounded-4xl "
           >subscribe 
             <span class="material-symbols-outlined leading-none align-middle">
     arrow_forward
@@ -61,19 +81,23 @@
     <!-- banner section -->
 
     <div class="
-    bg-[url(assets/hero-bg.png)] bg-[center_30%] bg-contain bg-no-repeat bg-[#1A0B2E]
+    bg-[url(assets/hero-bg.png)] bg-position-[center_30%] bg-contain bg-no-repeat bg-[#1A0B2E]
     text-center 
     flex flex-col justify-center items-center 
     p-6  md:p-20">
       <!-- banner icon -->
             <div class="
             bg-[url(assets/hero-circle.png)] bg-center bg-contain bg-no-repeat
-            w-[50%] p-[15%] md:p-10 md:w-[350px] md:h-[350px] flex justify-center items-center 
-            object-center object-contain
+            w-[200px] h-[200px] md:p-10 md:w-[350px] md:h-[350px] flex justify-center items-center 
+            relative
              mt-10 md:mt-6">
-              <img class="object-center object-cover" src="assets/microphone.png" alt="">
+              <img class="w-[60%] h-[60%] object-center object-contain" class="object-center object-cover" src="assets/microphone.png" alt="">
+
+              <div class="text-black bg-[#00FF88] px-4 py-2 rounded-4xl absolute top-1 right-0 md:top-10 md:right-5 shadow-xl/30 shadow-[#00FF88] animate-bounce">
+                <p class="font-semibold text-sm md:text-lg">NEW</p>
+              </div>
             </div>
-      <h1 class="text-4xl md:text-6xl font-extrabold mt-10">TeckWave</h1>
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-10 ">TeckWave</h1>
       <p class="text-base mt-2">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
       <!-- button div -->
@@ -101,7 +125,7 @@ mail
      flex flex-col justify-between items-center 
     ">
       <!-- section heading -->
-       <h1 class="text-5xl font-bold mt-12 ">About the Podcast</h1>
+       <h1 class="text-3xl md:text-4xl font-bold mt-12 ">About the Podcast</h1>
        <p class="
        mt-4 w-[95%] max-w-[800px]
        border-b border-[#412567] mb-20 pb-20
@@ -154,14 +178,16 @@ mail
     <!-- why choose teckwave section -->
      <div class="mt-32 p-[5%] lg:p-32 bg-[#230E3D] ">
 
-      <h1 class="text-5xl font-bold text-center mb-10">Why Choose TechWave</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-10">Why Choose TechWave</h1>
 
       <!-- features container-->
        <div class="flex flex-col gap-[30px] lg:gap-0 lg:grid grid-cols-12 grid-rows-7 max-w-[1200px] mx-auto box-border">
 
         <!-- card -->
          <div class="col-span-4 row-span-4 rounded-4xl lg:pr-[30px] lg:pb-[30px]">
-<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full ">
+<div class="bg-[#351165] rounded-4xl p-10 h-full
+flex flex-col gap-4 items-start justify-center 
+ border border-transparent hover:border-purple-500 transition-all duration-300">
           <img class="" src="assets/headphone.png" alt="">
           <h3 class="text-2xl font-bold">Premium Audio Quality</h3>
           <p class="text-base">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
@@ -170,7 +196,7 @@ mail
 
         <!-- card -->
          <div class="col-span-8 row-span-2 rounded-4xl  lg:pb-[30px]">
-<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center ">
+<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center border border-transparent hover:border-purple-500 transition-all duration-300">
           <img class="" src="assets/device.png" alt="">
           <h3 class="text-2xl font-bold">Mobile Friendly</h3>
           <p class="text-base">Listen on the go with seamless mobile experience and offline downloads.</p>
@@ -179,7 +205,7 @@ mail
 
         <!-- card -->
          <div class="col-span-8 row-span-2 rounded-4xl  lg:pb-[30px]">
-<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full">
+<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full border border-transparent hover:border-purple-500 transition-all duration-300">
           <img class="" src="assets/location.png" alt="">
           <h3 class="text-2xl font-bold">Global Community</h3>
           <p class="text-base">Connect with tech enthusiasts from over 120 countries worldwide.</p>
@@ -188,7 +214,7 @@ mail
 
         <!-- card -->
          <div class="col-span-8 row-span-3 rounded-4xl lg:pr-[30px] ">
-<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full">
+<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full border border-transparent hover:border-purple-500 transition-all duration-300">
           <img class="" src="assets/zap-fast.png" alt="">
           <h3 class="text-2xl font-bold">Exclusive Interviews</h3>
           <p class="text-base">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
@@ -197,7 +223,7 @@ mail
 
         <!-- card -->
          <div class="col-span-4 row-span-3 rounded-4xl  ">
-<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full">
+<div class="bg-[#351165] rounded-4xl p-10 flex flex-col gap-4 items-start justify-center h-full border border-transparent hover:border-purple-500 transition-all duration-300">
           <img class="" src="assets/resource.png" alt="">
           <h3 class="text-2xl font-bold">Rich Resources</h3>
           <p class="text-base">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -208,7 +234,7 @@ mail
 
 
      <!-- features episode -->
-      <h1 class="text-5xl font-bold text-center mt-32 mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mt-32 mb-10">
         Featured Episodes
       </h1>
 
@@ -216,7 +242,7 @@ mail
        <div class="flex flex-col lg:flex-row gap-7 w-[95%] max-w-[1200px] mx-auto">
 
         <!-- episode -->
-         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative">
+         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative border border-transparent hover:border-purple-500 transition-all duration-300">
   
          
             <iframe width="100%" height="265px" src="https://www.youtube.com/embed/BjXGV0X6c0k?controls=0&modestbranding=1&rel=0" title="বাংলাদেশে ট্যালেন্ট কে সঠিক মূল্যায়ন করা হয় না | Army Training | Brain Drain : @Del H Khan​" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -224,7 +250,7 @@ mail
           
           <!-- episode content -->
            <div class="mt-4 flex flex-col gap-5 p-5">
-            <h1 class="text-2xl font-bold">বাংলাদেশে ট্যালেন্ট কে সঠিক মূল্যায়ন করা হয় না | Army Training | Brain Drain : @Del H Khan</h1>
+            <h1 class="text-xl md:text-2xl font-bold">বাংলাদেশে ট্যালেন্ট কে সঠিক মূল্যায়ন করা হয় না | Army Training | Brain Drain : @Del H Khan</h1>
             <p>Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
 
             <!-- time container -->
@@ -238,7 +264,7 @@ mail
          </div>
 
         <!-- episode -->
-         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative">
+         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative border border-transparent hover:border-purple-500 transition-all duration-300">
   
          
             <iframe width="100%" height="265px" src="https://www.youtube.com/embed/muBBYZXYgoM" title="এই ১১০ মিনিট আপনার চিন্তাকে নাড়িয়ে দিবে | Omar Al Zabir" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -260,7 +286,7 @@ mail
          </div>
 
         <!-- episode -->
-         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative">
+         <div class="rounded-4xl bg-[#250D44] flex-1 flex flex-col overflow-hidden box-border relative border border-transparent hover:border-purple-500 transition-all duration-300">
   
          
             <iframe width="100%" height="256px" src="https://www.youtube.com/embed/HWT7mTppo5U" title="AI এর যুগে Programming বা Coding সেক্টরের ফিউচার কী? Will AI Replace Programmers? Reality vs Hype" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -292,7 +318,8 @@ mail
          bg-[#250D44] 
          py-16 px-10 
          flex flex-col lg:flex-row gap-6 
-         w-[95%] max-w-[1200px] mx-auto mb-32 rounded-4xl text-center lg:text-left justify-center items-center">
+         w-[95%] max-w-[1200px] mx-auto mb-32 rounded-4xl text-center lg:text-left justify-center items-center
+         border border-transparent hover:border-purple-500 transition-all duration-300">
 
 
           <!-- image -->
@@ -411,5 +438,7 @@ mail
 
           </div>
         </footer>
+
+        
 </body>
 </html>
